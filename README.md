@@ -1,6 +1,7 @@
 # ZooRações
 
 Welcome to my project, from full-stack developer using PHP Laravel.
+Read more about a Project Documentation [documentation](DOCUMENTATION.MD)
 
 # Install the Project
 
