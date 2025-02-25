@@ -1,80 +1,79 @@
-## REQUISITOS DE CRIAÇÃO E DESENVOLVIMENTO - ZooRações
+## CREATION AND DEVELOPMENT REQUIREMENTS - ZooRações
 
-### 1. Introdução
+### 1. Introduction
 
-Este documento estabelece os requisitos obrigatórios para a criação de uma landing page para a loja veterinária ZooRações. Ele deve ser seguido durante todo o desenvolvimento do projeto e pode ser validado formalmente pelas partes envolvidas.
+This document establishes the mandatory requirements for creating a landing page for the ZooRações veterinary store. It must be followed throughout the development of the project and can be formally validated by the parties involved.
 
-### 2. Informações Gerais do Projeto
+### 2. General Project Information
 
-**2.1. Nome do Projeto:** ZooRações\
-**2.2. Objetivo do Aplicativo:** Desenvolver uma landing page para a loja veterinária ZooRações, incluindo funcionalidades básicas como login e registro, validação de dados, envio de formulários, envio de e-mails e integração com APIs.\
-**2.3. Tecnologias Utilizadas:**
+**2.1. Project Name:** ZooRações\
+**2.2. Application Objective:** Develop a landing page for the ZooRações veterinary store, including basic functionalities such as login and registration, data validation, sending forms, sending emails and API integration.\
+**2.3. Technologies used:**
 
 - **Back-end:** PHP, Laravel, NodeJS, Breeze
 - **Front-end:** JavaScript, JQuery, Vite, Tailwind
-- **Banco de Dados:** MySQL
-- **APIs:** Google API para envio de e-mails e login
-- **Servidor:** Ubuntu Linux (notebook do desenvolvedor)
+- **Database:** MySQL
+- **APIs:** Google API for sending emails and login
+- **Server:** Ubuntu Linux (developer's notebook)
 
-### 3. Requisitos Funcionais
+### 3. Functional requirements
 
-**3.1. Cadastro de Usuário**
+**3.1. User registration**
 
-- Cadastro simples com nome, e-mail e senha
-- Integração com Google para login e registro
+- Simple registration with name, email and password
+- Integration with Google for login and registration
 
-**3.2. Categorização de Produtos**
+**3.2. Product categorization**
 
-- Os produtos serão organizados por categorias
-- Cada produto terá uma imagem e uma descrição detalhada
+- Products will be organized by categories
+- Each product will have an image and a detailed description
 
-### 4. Requisitos Não Funcionais
+### 4. Non-functional requirements
 
-**4.1. Plataforma:** Aplicativo responsivo para dispositivos móveis e desktop\
-**4.2. Desempenho:** Processamento rápido de informações e integração eficiente com APIs externas\
-**4.3. Acessibilidade:** Interface intuitiva e amigável para usuários\
-**4.4. Segurança:**
+**4.1. Platform:** Responsive application for mobile and desktop devices\
+**4.2. Performance:** Fast information processing and efficient integration with external APIs\
+**4.3. Accessibility:** Intuitive and user-friendly interface\
+**4.4. Security:**
 
-- Proteção de dados sensíveis com criptografia
-- Autenticação segura via Google Login
+- Protection of confidential data with encryption
+- Secure authentication via Google Login
 
-### 5. Design e UX/UI
+### 5. Design and UX/UI
 
-**5.1. Referências de Design:** Layout minimalista, com cores suaves e interface limpa\
-**5.2. Hierarquia Visual:** Tela inicial com acesso rápido ao cadastro e informações sobre os produtos\
-**5.3. Responsividade:** Adaptável para dispositivos móveis e desktop
+**5.1. Design references:** Minimalist layout, with soft colors and a clean interface\
+**5.2. Visual hierarchy:** Home screen with quick access to registration and product information\
+**5.3. Responsiveness:** Adaptable for mobile and desktop devices
 
-### 6. Planejamento e Gerenciamento
+### 6. Planning and management
 
-**6.1. Prazo de Entrega:** Estimado para 4 meses.\
-**6.2. Metodologia:** Scrum\
-**6.3. Ferramentas de Gerenciamento:** Trello ou Jira para acompanhamento do progresso\
-**6.4. Revisões:** Semanais para avaliar andamento e ajustar prioridades
+**6.1. Delivery time:** Estimated 4 months.\
+**6.2. Methodology:** Scrum\
+**6.3. Management tools:** Trello or Jira to monitor progress\
+**6.4. Reviews:** Weekly to assess progress and adjust priorities
 
-### 7. Testes e Qualidade
+### 7. Testing and quality
 
-**7.1. Dispositivos para Testes:** Testado em smartphones e desktop\
-**7.2. Cenários Críticos:**
+**7.1. Test Devices:** Tested on smartphones and desktops\
+**7.2. Critical Scenarios:**
 
-- Cadastro e login de usuários
-- Envio de e-mails de confirmação
+- User registration and login
+- Sending confirmation emails
 
-### 8. Deploy e Monitoramento
+### 8. Deployment and Monitoring
 
-**8.1. Ambientes:**
+**8.1. Environments:**
 
-- Ambiente de homologação para testes
-- Produção para lançamento final\
-  **8.2. Distribuição:** Implantação via servidor web (Apache ou Nginx)\
-  **8.3. Monitoramento:** Uso de ferramentas como Google Analytics e logs no servidor para acompanhar falhas
+- Homologation environment for testing
+- Production for final release\
+**8.2. Distribution:** Deployment via web server (Apache or Nginx)\
+**8.3. Monitoring:** Use of tools such as Google Analytics and server logs to track failures
 
-### 9. Manutenção e Atualizações
+### 9. Maintenance and Updates
 
-**9.1. Responsáveis pela Manutenção:** Equipe de desenvolvimento, garantindo a estabilidade e melhorias contínuas\
-**9.2. Feedback dos Usuários:** Coletado por meio de avaliações e suporte ao cliente\
-**9.3. Frequência de Atualizações:** Pequenos ajustes mensais e melhorias semestrais com base nas demandas dos usuários
+**9.1. Responsible for Maintenance:** Development team, ensuring stability and continuous improvements\
+**9.2. User Feedback:** Collected through evaluations and customer support\
+**9.3. Update Frequency:** Minor monthly adjustments and semi-annual improvements based on user demands
 
-### 10. Assinatura e Validação
+### 10. Signature and Validation
 
-As partes envolvidas concordam com os requisitos estabelecidos neste documento e comprometem-se a segui-los integralmente durante o desenvolvimento do website.
-
+The parties involved agree to the requirements established in this document and undertake to follow them fully during the development of the website.
