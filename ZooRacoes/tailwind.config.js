@@ -44,12 +44,9 @@ export default {
                 800: "#551f2c",
                 900: "#311319",
             },
-            primary: "#14BEC9",
-            secondary: "#EFF9EB",
-            tertiary: "#CE688B",
-            quarter: "#D9F6EE",
-            backgBlue: "#2C5CC4",
-            buttonBlue: "#052468",
+            navGreen: "#59843A",
+            navGreen2: "#4D6D36",
+
         },
         height: {
             auto: "auto",

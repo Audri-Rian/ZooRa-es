@@ -1,52 +1,86 @@
-<nav class="bg-white py-4 rounded-b-3xl ">
-    <div class="container mx-auto flex justify-between items-center px-6">
+<nav>
+    <!-- Navbar -->
+    <div class="flex justify-center items-center w-full bg-navGreen">
 
-        <!-- LOGO -->
-        <a href="#" class="text-2xl font-bold text-gray-800">Minha Loja</a>
-        
-        <!-- LINKS DE NAVEGAÇÃO -->
-        <ul class="hidden md:flex items-center space-x-20 text-gray-700 text-base font-medium">
-            <li><a href="#" class="hover:text-gray-900">Shop</a></li>
-            <li><a href="#" class="hover:text-gray-900">Pet Gear</a></li>
-            <li><a href="#" class="hover:text-gray-900">Offer</a></li>
-            <li><a href="#" class="hover:text-gray-900">About Us</a></li>
-        </ul>
+        <!-- Logo -->
+        <a href="">
+            <img src="{{ asset('images/logo.png') }}" alt="ZooRações a loja do seu cão" class="w-48 h-24 mr-12">
+        </a>
 
-        <!-- BARRA DE PESQUISA -->
-        <div class="relative w-64 hidden md:block">
-            <input type="text" placeholder="Search..."
-                class="w-full px-4 py-2 border rounded-full focus:outline-none bg-gray-200 focus:ring-2 focus:ring-black ">
-            <span class="absolute right-3 top-2 text-gray-400">
-                🔍
-            </span>
+        <!-- Barra de Pesquisa (visível apenas em telas maiores) -->
+        <div class="hidden md:flex items-center w-full max-w-xl bg-gray-100 rounded-3xl px-4 py-2">
+            <label for="search" class="flex items-center cursor-pointer">
+                <svg class="w-6 h-6 text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-4.35-4.35m2.35-6.65a8 8 0 11-16 0 8 8 0 0116 0z"></path>
+                </svg>
+            </label>
+            <input id="search" type="text" placeholder="Pesquisar..." class="w-full bg-transparent focus:outline-none">
         </div>
 
-        <!-- BOTÕES DE LOGIN E REGISTRO -->
-        <div class="hidden md:flex space-x-8">
-            <a href="#"
-                class="px-6 py-2 border border-gray-700 rounded-full text-gray-700 hover:bg-gray-700 hover:text-white transition">
-                Login
+        <!-- Links de Navegação (visíveis apenas em telas maiores) -->
+        <div class="hidden md:flex justify-center items-center text-white space-x-8 ml-16 mr-14">
+            <a href="" class="hover:text-gray-300 transition">Atendimento</a>
+            <a href="" class="hover:text-gray-300 transition">Sobre nós</a>
+            <a href="" class="hover:text-gray-300 transition">A Budega de Urbano</a>
+        </div>
+
+        <!-- Ícones de Usuário e Logout -->
+        <div class="flex text-white space-x-3">
+            <a href=""
+                class="rounded-full border-2 border-gray-100 w-10 h-10 flex items-center justify-center hover:bg-gray-300 transition">
+                <i class="fa-solid fa-user"></i>
             </a>
-            <a href="#" class="px-6 py-2  bg-gray-900 text-white rounded-full hover:bg-blue-700 transition">
-                Registrar-se
+            <a href=""
+                class="rounded-full border-2 border-gray-100 w-10 h-10 flex items-center justify-center hover:bg-gray-300 transition">
+                <i class="fa-solid fa-right-from-bracket"></i>
             </a>
         </div>
 
-        <!-- MENU HAMBÚRGUER PARA MOBILE -->
-        <button class="md:hidden text-gray-700 text-2xl">
-            ☰
+        <!-- Menu Hambúrguer (visível apenas em telas menores) -->
+        <button id="menu-toggle" class="md:hidden text-white focus:outline-none ml-4" aria-label="Abrir menu">
+            <i class="fa-solid fa-bars text-2xl"></i>
         </button>
     </div>
 
-    <hr class="border bg-gray-500 mt-4">
-    <ul class="container flex justify-between items-center text-tiny text-gray-700 mt-2 px-64">
-        <li><a href=""></a>Cachorros</li>
-        <li><a href=""></a>Gatos</li>
-        <li><a href="">Pássaros</a></li>
-        <li><a href="">Inseticidas</a></li>
-        <li><a href="">Peixes</a></li>
-        <li><a href=""></a>Rações</li>
-        <li><a href="">Promoções</a></li>
-    </ul>
-    <hr class="border bg-gray-500 mt-2">
+    <!-- Menu de Links (visível apenas em telas menores quando o menu hambúrguer é clicado) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-navGreen p-4">
+        <!-- Links de Navegação -->
+        <a href="" class="block text-white hover:text-gray-300 transition mb-2">Atendimento</a>
+        <a href="" class="block text-white hover:text-gray-300 transition mb-2">Sobre nós</a>
+        <a href="" class="block text-white hover:text-gray-300 transition mb-4">A Budega de Urbano</a>
+
+        <hr class="border-1 border-gray-100 mb-3">
+
+        <!-- Barra de Seleção de Itens -->
+        <div class="flex flex-col space-y-2">
+            <a href="" class="text-white hover:text-gray-300 transition">Medicamentos</a>
+            <a href="" class="text-white hover:text-gray-300 transition">Acessórios</a>
+            <a href="" class="text-white hover:text-gray-300 transition">Hormônios</a>
+            <a href="" class="text-white hover:text-gray-300 transition">Pets</a>
+            <a href="" class="text-white hover:text-gray-300 transition">Rações e Petiscos</a>
+            <a href="" class="text-white hover:text-gray-300 transition">Pragas e Insetos</a>
+            <a href="" class="text-white hover:text-gray-300 transition">Ofertas</a>
+        </div>
+    </div>
+
+    <!-- Barra de Seleção de Itens (visível apenas em telas maiores) -->
+    <div class="hidden md:flex items-center justify-center bg-navGreen2 text-white p-1 space-x-24 text-tiny">
+        <a href="" class="hover:text-gray-300 transition">Medicamentos</a>
+        <a href="" class="hover:text-gray-300 transition">Acessórios</a>
+        <a href="" class="hover:text-gray-300 transition">Hormônios</a>
+        <a href="" class="hover:text-gray-300 transition">Pets</a>
+        <a href="" class="hover:text-gray-300 transition">Rações e Petiscos</a>
+        <a href="" class="hover:text-gray-300 transition">Pragas e Insetos</a>
+        <a href="" class="hover:text-gray-300 transition">Ofertas</a>
+    </div>
 </nav>
+
+<!-- Script para alternar o menu hambúrguer -->
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
