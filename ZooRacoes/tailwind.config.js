@@ -44,8 +44,9 @@ export default {
                 800: "#551f2c",
                 900: "#311319",
             },
-            navGreen: "#59843A",
-            navGreen2: "#4D6D36",
+            navColor: "#D47C5C",
+            background: "#FCF4F4",
+            textColor1: "#4C2C34",
 
         },
         height: {

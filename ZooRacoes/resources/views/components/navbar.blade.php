@@ -1,6 +1,6 @@
 <nav>
     <!-- Navbar -->
-    <div class="flex justify-center items-center w-full bg-navGreen">
+    <div class="flex justify-center items-center w-full bg-navColor">
 
         <!-- Logo -->
         <a href="">
@@ -45,28 +45,28 @@
     </div>
 
     <!-- Menu de Links (visível apenas em telas menores quando o menu hambúrguer é clicado) -->
-    <div id="mobile-menu" class="hidden md:hidden bg-navGreen p-4">
+    <div id="mobile-menu" class="hidden md:hidden bg-navGreen p-4 text-black">
         <!-- Links de Navegação -->
-        <a href="" class="block text-white hover:text-gray-300 transition mb-2">Atendimento</a>
-        <a href="" class="block text-white hover:text-gray-300 transition mb-2">Sobre nós</a>
-        <a href="" class="block text-white hover:text-gray-300 transition mb-4">A Budega de Urbano</a>
+        <a href="" class="block  hover:text-gray-300 transition mb-2">Atendimento</a>
+        <a href="" class="block  hover:text-gray-300 transition mb-2">Sobre nós</a>
+        <a href="" class="block  hover:text-gray-300 transition mb-4">A Budega de Urbano</a>
 
         <hr class="border-1 border-gray-100 mb-3">
 
         <!-- Barra de Seleção de Itens -->
-        <div class="flex flex-col space-y-2">
-            <a href="" class="text-white hover:text-gray-300 transition">Medicamentos</a>
-            <a href="" class="text-white hover:text-gray-300 transition">Acessórios</a>
-            <a href="" class="text-white hover:text-gray-300 transition">Hormônios</a>
-            <a href="" class="text-white hover:text-gray-300 transition">Pets</a>
-            <a href="" class="text-white hover:text-gray-300 transition">Rações e Petiscos</a>
-            <a href="" class="text-white hover:text-gray-300 transition">Pragas e Insetos</a>
-            <a href="" class="text-white hover:text-gray-300 transition">Ofertas</a>
+        <div class="flex flex-col text-black space-y-2">
+            <a href="" class=" hover:text-gray-300 transition">Medicamentos</a>
+            <a href="" class=" hover:text-gray-300 transition">Acessórios</a>
+            <a href="" class=" hover:text-gray-300 transition">Hormônios</a>
+            <a href="" class=" hover:text-gray-300 transition">Pets</a>
+            <a href="" class=" hover:text-gray-300 transition">Rações e Petiscos</a>
+            <a href="" class=" hover:text-gray-300 transition">Pragas e Insetos</a>
+            <a href="" class=" hover:text-gray-300 transition">Ofertas</a>
         </div>
     </div>
 
     <!-- Barra de Seleção de Itens (visível apenas em telas maiores) -->
-    <div class="hidden md:flex items-center justify-center bg-navGreen2 text-white p-1 space-x-24 text-tiny">
+    <div class="hidden md:flex items-center justify-center bg-background text-black p-1 space-x-24 text-tiny">
         <a href="" class="hover:text-gray-300 transition">Medicamentos</a>
         <a href="" class="hover:text-gray-300 transition">Acessórios</a>
         <a href="" class="hover:text-gray-300 transition">Hormônios</a>

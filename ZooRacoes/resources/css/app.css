@@ -16,3 +16,13 @@ body {
 main {
     width: 100%;
 }
+
+.dog-icon{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 218px;
+    top: 300px;
+
+
+}
