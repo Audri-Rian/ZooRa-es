@@ -6,14 +6,16 @@ use Closure;
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
 
-class LandingPage extends Component
+class BrowseCategory extends Component
 {
+    public $categories;
+
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct($categories)
     {
-        //
+        $this->categories = $categories;
     }
 
     /**
@@ -21,6 +23,8 @@ class LandingPage extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.landing-page');
+        return view('components.browse-category', [
+            'categories' => $this->categories
+        ]);
     }
 }

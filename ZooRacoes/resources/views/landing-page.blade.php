@@ -1,5 +1,4 @@
 <div>
-
     <section class="flex w-full">
         <div class=" w-2/5 p-12 text-textColor1 ml-10">
             <h1 class="text-6xl mb-8">Onde todos os <br>animais de <br>estimação <br> encontram conforto <br>e alegria!
@@ -46,26 +45,6 @@
             </div>
         </div>
     </section>
-    <!--Transformar isso em um component e criar a logica no controller, a model e a migration ja foi criada porem apenas a migration foi alterada
-    https://chatgpt.com/share/67d424a8-fbd0-8008-b7e8-79c98de7533b
-    -->
-    <div class="p-6">
-        <h2 class="text-3xl mb-4">Browse by Category</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-            @foreach ($categories as $category)
-                <div class="bg-white p-3 rounded-xl shadow flex items-center space-x-3">
-                    <img src="{{ asset($category->image) }}" alt="{{ $category->title }}"
-                        class="w-20 h-20 object-cover rounded-full">
-                    <div class="flex flex-col flex-grow">
-                        <h3 class="font-semibold text-lg">{{ $category->title }}</h3>
-                        <p class="text-gray-500 text-sm">{{ $category->description }}</p>
-                    </div>
-                    <a href="{{ $category->link }}" class="text-gray-600 hover:text-black">
-                        <i class="fa-solid fa-arrow-right border border-gray-200 rounded-full p-2"></i>
-                    </a>
-                </div>
-            @endforeach
-        </div>
-    </div>
 
+    <x-browse-category :categories="$categories" />
 </div>

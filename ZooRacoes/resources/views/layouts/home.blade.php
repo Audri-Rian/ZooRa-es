@@ -10,11 +10,8 @@
 
     @vite(['resources/css/app.css'])
     <script src="https://cdn.tailwindcss.com"></script>
-    <!--Icones-->
     <script src="https://kit.fontawesome.com/35abbf3e65.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -28,7 +25,7 @@
 
     <main>
         <x-navbar />
-        @include('components.landing-page')
+        @include('landing-page')
 
     </main>
 

@@ -1,13 +1,9 @@
 <nav>
-    <!-- Navbar -->
     <div class="flex justify-center items-center w-full bg-navColor">
-
         <!-- Logo -->
         <a href="">
             <img src="{{ asset('images/logo.png') }}" alt="ZooRações a loja do seu cão" class="w-48 h-24 mr-12">
         </a>
-
-        <!-- Barra de Pesquisa (visível apenas em telas maiores) -->
         <div class="hidden md:flex items-center w-full max-w-xl bg-gray-100 rounded-3xl px-4 py-2">
             <label for="search" class="flex items-center cursor-pointer">
                 <svg class="w-6 h-6 text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -18,15 +14,11 @@
             </label>
             <input id="search" type="text" placeholder="Pesquisar..." class="w-full bg-transparent focus:outline-none">
         </div>
-
-        <!-- Links de Navegação (visíveis apenas em telas maiores) -->
         <div class="hidden md:flex justify-center items-center text-white space-x-8 ml-16 mr-14">
             <a href="" class="hover:text-gray-300 transition">Atendimento</a>
             <a href="" class="hover:text-gray-300 transition">Sobre nós</a>
             <a href="" class="hover:text-gray-300 transition">A Budega de Urbano</a>
         </div>
-
-        <!-- Ícones de Usuário e Logout -->
         <div class="flex text-white space-x-3">
             <a href=""
                 class="rounded-full border-2 border-gray-100 w-10 h-10 flex items-center justify-center hover:bg-gray-300 transition">
@@ -37,23 +29,15 @@
                 <i class="fa-solid fa-right-from-bracket"></i>
             </a>
         </div>
-
-        <!-- Menu Hambúrguer (visível apenas em telas menores) -->
         <button id="menu-toggle" class="md:hidden text-white focus:outline-none ml-4" aria-label="Abrir menu">
             <i class="fa-solid fa-bars text-2xl"></i>
         </button>
     </div>
-
-    <!-- Menu de Links (visível apenas em telas menores quando o menu hambúrguer é clicado) -->
     <div id="mobile-menu" class="hidden md:hidden bg-navGreen p-4 text-black">
-        <!-- Links de Navegação -->
         <a href="" class="block  hover:text-gray-300 transition mb-2">Atendimento</a>
         <a href="" class="block  hover:text-gray-300 transition mb-2">Sobre nós</a>
         <a href="" class="block  hover:text-gray-300 transition mb-4">A Budega de Urbano</a>
-
         <hr class="border-1 border-gray-100 mb-3">
-
-        <!-- Barra de Seleção de Itens -->
         <div class="flex flex-col text-black space-y-2">
             <a href="" class=" hover:text-gray-300 transition">Medicamentos</a>
             <a href="" class=" hover:text-gray-300 transition">Acessórios</a>
@@ -64,8 +48,6 @@
             <a href="" class=" hover:text-gray-300 transition">Ofertas</a>
         </div>
     </div>
-
-    <!-- Barra de Seleção de Itens (visível apenas em telas maiores) -->
     <div class="hidden md:flex items-center justify-center bg-background text-black p-1 space-x-24 text-tiny">
         <a href="" class="hover:text-gray-300 transition">Medicamentos</a>
         <a href="" class="hover:text-gray-300 transition">Acessórios</a>
@@ -76,11 +58,9 @@
         <a href="" class="hover:text-gray-300 transition">Ofertas</a>
     </div>
 </nav>
-
-<!-- Script para alternar o menu hambúrguer -->
 <script>
-    document.getElementById('menu-toggle').addEventListener('click', function () {
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenu.classList.toggle('hidden');
-    });
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu.classList.toggle('hidden');
+});
 </script>
