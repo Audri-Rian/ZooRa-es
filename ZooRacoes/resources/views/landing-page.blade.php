@@ -51,10 +51,65 @@
     <div class="p-16">
         <div class="flex justify-between">
             <h2 class="text-3xl mb-6">Lastest Products</h2>
-            <h2>View all</h2>
+            <div class="space-x-4">
+                <a href="">View All</a><i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
         </div>
-        <x-view-product />
+        <!--Component criado com nescessidade de ter logica relacionadas a product 
+        e tamanho adpatado na div em que componhe para não quebrar o codigo -->
+        <div class="flex justify-between">
+            <div class="flex flex-col">
+                <div class="bg-white flex justify-center items-center">
+                    <img src="{{ asset('images/portion dog.png') }}" alt="Product" class="w-[400px] h-[500px]">
+                </div>
+                <h1 class="text-xl">Bark Buddies Playpen</h1>
+                <h2 class="text-gray-400 text-lg">Price</h2>
+            </div>
+            <div class="flex flex-col ">
+                <div class="bg-white">
+                    <img src="{{ asset('images/portion dog.png') }}" alt="Product" class="w-[400px] h-[500px]">
+                </div>
+                <h1 class="text-xl">Bark Buddies Playpen</h1>
+                <h2 class="text-gray-400 text-lg">Price</h2>
+            </div>
+            <div class="flex flex-col ">
+                <div class="bg-white">
+                    <img src="{{ asset('images/portion dog.png') }}" alt="Product" class="w-[400px] h-[500px]">
+                </div>
+                <h1 class="text-xl">Bark Buddies Playpen</h1>
+                <h2 class="text-gray-400 text-lg">Price</h2>
+            </div>
+            <div class="flex flex-col ">
+                <div class="bg-white">
+                    <img src="{{ asset('images/portion dog.png') }}" alt="Product" class="w-[400px] h-[500px]">
+                </div>
+                <h1 class="text-xl">Bark Buddies Playpen</h1>
+                <h2 class="text-gray-400 text-lg">Price</h2>
+            </div>
+        </div>
     </div>
 
+    <x-scroller />
+
+    <div class="p-16">
+        <div class="h-screen w-full bg-cover bg-center rounded-3xl"
+            style="background-image: url('{{ asset('images/racao-bg.jpg') }}');">
+            <div class="flex">
+                <div class="p-16">
+                    <h1 class="text-yellow-500 text-8xl">Choose best food</h1>
+                    <p></p>
+                    <a href=""></a>
+                </div>
+
+                <div class="flex flex-col ">
+                    <div class="bg-white">
+                        <img src="{{ asset('images/portion dog.png') }}" alt="Product" class="w-[400px] h-[500px]">
+                    </div>
+                    <h1 class="text-xl">Bark Buddies Playpen</h1>
+                    <h2 class="text-gray-400 text-lg">Price</h2>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
