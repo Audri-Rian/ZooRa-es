@@ -47,4 +47,14 @@
     </section>
 
     <x-browse-category :categories="$categories" />
+    <!--View Product-->
+    <div class="p-16">
+        <div class="flex justify-between">
+            <h2 class="text-3xl mb-6">Lastest Products</h2>
+            <h2>View all</h2>
+        </div>
+        <x-view-product />
+    </div>
+
+
 </div>

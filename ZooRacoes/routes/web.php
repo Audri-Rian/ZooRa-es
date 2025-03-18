@@ -6,5 +6,3 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [LandingPageController::class, 'index']);
-
-//Route::get('/LandingPage', [BrowseCategoryController::class, 'alterTable']);

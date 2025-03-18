@@ -11,7 +11,7 @@ class BrowseCategory extends Component
     public $categories;
 
     /**
-     * Create a new component instance.
+     * Cria uma nova instância do componente.
      */
     public function __construct($categories)
     {
@@ -19,7 +19,7 @@ class BrowseCategory extends Component
     }
 
     /**
-     * Get the view / contents that represent the component.
+     * Retorna a view que representa o componente.
      */
     public function render(): View|Closure|string
     {

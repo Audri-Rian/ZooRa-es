@@ -3,15 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\Category;
+use App\Models\ProductCategory;
 use Illuminate\Http\Request;
 
 class LandingPageController extends Controller
 {
     public function index()
     {
-        $categories = Category::all();
+        // Obtendo todas as categorias de produtos
+        $categories = ProductCategory::all();
 
+        // Retornando a view com as categorias
         return view("layouts.home", compact('categories'));
     }
 }
