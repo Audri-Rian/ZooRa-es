@@ -23,6 +23,11 @@ main {
     height: 14px;
     left: 218px;
     top: 300px;
+}
 
-
+#background-image {
+    /* background-attachment: fixed;  Remove isso se for usar JavaScript */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
